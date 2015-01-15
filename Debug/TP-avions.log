@@ -1,0 +1,29 @@
+﻿La génération a démarré 15/01/2015 09:01:54.
+     1>Projet "Z:\MEDEV\TP-avions\TP-avions\TP-avions\TP-avions.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\MEDEV\TP-avions\TP-avions\TP-avions\include" /I"C:/Program Files (x86)/OpenSceneGraph//include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\Avion.cpp src\AvionAmi.cpp src\AvionEnnemi.cpp src\GeneralCallback.cpp src\main.cpp stdafx.cpp
+         stdafx.cpp
+         main.cpp
+         GeneralCallback.cpp
+     1>z:\medev\tp-avions\tp-avions\tp-avions\src\generalcallback.cpp(31): warning C4018: '<' : incompatibilité signed/unsigned
+         AvionEnnemi.cpp
+     1>z:\medev\tp-avions\tp-avions\tp-avions\src\avionennemi.cpp(36): warning C4018: '<' : incompatibilité signed/unsigned
+     1>z:\medev\tp-avions\tp-avions\tp-avions\src\avionennemi.cpp(60): warning C4018: '<' : incompatibilité signed/unsigned
+         AvionAmi.cpp
+     1>z:\medev\tp-avions\tp-avions\tp-avions\src\avionami.cpp(50): warning C4018: '<' : incompatibilité signed/unsigned
+     1>z:\medev\tp-avions\tp-avions\tp-avions\src\avionami.cpp(158): warning C4018: '<' : incompatibilité signed/unsigned
+         Avion.cpp
+         Génération de code en cours...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\MEDEV\TP-avions\TP-avions\Debug\TP-avions.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:/Program Files (x86)/OpenSceneGraph//lib" osgd.lib osgDBd.lib osgGAd.lib osgUtild.lib osgViewerd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Z:\MEDEV\TP-avions\TP-avions\Debug\TP-avions.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\MEDEV\TP-avions\TP-avions\Debug\TP-avions.lib" /MACHINE:X86 Debug\Avion.obj
+         Debug\AvionAmi.obj
+         Debug\AvionEnnemi.obj
+         Debug\GeneralCallback.obj
+         Debug\main.obj
+         Debug\stdafx.obj
+         TP-avions.vcxproj -> Z:\MEDEV\TP-avions\TP-avions\Debug\TP-avions.exe
+     1>Génération du projet "Z:\MEDEV\TP-avions\TP-avions\TP-avions\TP-avions.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:49.97

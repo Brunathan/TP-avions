@@ -1,4 +1,3 @@
-
 #include "Avion.h"
 
 std::vector<Avion*> Avion::avions; 
