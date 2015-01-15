@@ -1,5 +1,5 @@
-﻿La génération a démarré 15/01/2015 09:01:54.
-     1>Projet "Z:\MEDEV\TP-avions\TP-avions\TP-avions\TP-avions.vcxproj" sur le nœud 2 (Build cible(s)).
+﻿La génération a démarré 15/01/2015 10:36:54.
+     1>Projet "Z:\MEDEV\TP-avions\TP-avions\TP-avions\TP-avions.vcxproj" sur le nœud 2 (Rebuild cible(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"Z:\MEDEV\TP-avions\TP-avions\TP-avions\include" /I"C:/Program Files (x86)/OpenSceneGraph//include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\Avion.cpp src\AvionAmi.cpp src\AvionEnnemi.cpp src\GeneralCallback.cpp src\main.cpp stdafx.cpp
          stdafx.cpp
@@ -22,8 +22,8 @@
          Debug\main.obj
          Debug\stdafx.obj
          TP-avions.vcxproj -> Z:\MEDEV\TP-avions\TP-avions\Debug\TP-avions.exe
-     1>Génération du projet "Z:\MEDEV\TP-avions\TP-avions\TP-avions\TP-avions.vcxproj" terminée (Build cible(s)).
+     1>Génération du projet "Z:\MEDEV\TP-avions\TP-avions\TP-avions\TP-avions.vcxproj" terminée (Rebuild cible(s)).
 
 La génération a réussi.
 
-Temps écoulé 00:00:49.97
+Temps écoulé 00:00:52.02

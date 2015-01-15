@@ -28,8 +28,8 @@ int main()
 /* SPACESHIPS	*/
 
 	//Loading the SPACESHIPS nodes
-	osg::ref_ptr<osg::Node> xWing (osgDB::readNodeFile("C:\\Users\\eleve\\Documents\\Visual Studio 2012\\Projects\\TPosgAvions\\TPosgAvions\\model\\StarWars\\star wars x-wing.3ds"));
-	osg::ref_ptr<osg::Node> tFighter (osgDB::readNodeFile("C:\\Users\\eleve\\Documents\\Visual Studio 2012\\Projects\\TPosgAvions\\TPosgAvions\\model\\mechant\\TF_3DS02.3ds"));
+	osg::ref_ptr<osg::Node> xWing (osgDB::readNodeFile("Z:\\MEDEV\\TP-avions\\TP-avions\\TP-avions\\models\\StarWars\\star wars x-wing.3ds"));
+	osg::ref_ptr<osg::Node> tFighter (osgDB::readNodeFile("Z:\\MEDEV\\TP-avions\\TP-avions\\TP-avions\\models\\mechant\\TF_3DS02.3ds"));
 
 /* Scale Matrix	*/
 
@@ -79,6 +79,21 @@ int main()
 	osg::ref_ptr<osg::PositionAttitudeTransform> pat4 (new osg::PositionAttitudeTransform);
 	pat4->addChild(patTFigther.get());
 
+/* Play Zone */
+
+	osg::ref_ptr<osg::Geode> ZoneGeode (new osg::Geode);
+	osg::ref_ptr<osg::Box> myBox (new osg::Box(osg::Vec3(7.5,7.5,7.5),14));
+	osg::ref_ptr<osg::ShapeDrawable> ZoneDrawable (new osg::ShapeDrawable(myBox.get()));
+	osg::ref_ptr<osg::StateSet> ZoneStateSet (ZoneGeode->getOrCreateStateSet());
+
+	osg::PolygonMode * polygonMode = new osg::PolygonMode;
+	polygonMode->setMode( osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE );
+	ZoneStateSet->setAttributeAndModes( polygonMode,osg::StateAttribute::OVERRIDE | osg::StateAttribute::ON );
+
+	ZoneGeode->setStateSet(ZoneStateSet);
+	
+	ZoneGeode->addDrawable(ZoneDrawable);
+
 
 /* SCENE GRAPH*/
 
@@ -87,6 +102,8 @@ int main()
 	root->addChild(pat2.get());
 	root->addChild(pat3.get());
 	root->addChild(pat4.get());
+
+	root->addChild(ZoneGeode.get());
 
 	// Set the scene data
 	viewer.setSceneData( root.get() ); 
@@ -104,6 +121,7 @@ int main()
 
 	
 /* START VIEWER */
+	
 	osg::ref_ptr<GeneralCallback> generalCallback = new GeneralCallback();
 	generalCallback->patAvions.push_back(pat1);
 	generalCallback->patAvions.push_back(pat2);
